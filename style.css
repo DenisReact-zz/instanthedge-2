@@ -1,0 +1,1638 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "bwmodelica-r";
+    src: url("./fonts/bwmodelica-regular.otf");
+}
+
+@font-face {
+    font-family: "playfairdisplay-m";
+    src: url("./fonts/playfairdisplay-medium.ttf");
+}
+
+@font-face {
+    font-family: "playfairdisplay-mi";
+    src: url("./fonts/playfairdisplay-mediumitalic.ttf");
+}
+
+.nepon .up_block {
+    width: 100vw;
+    position: relative;
+}
+
+.nepon .up_block img {
+    width: 100vw;
+}
+
+.nepon .up_block h3 {
+    position: absolute;
+    bottom: 3.281vw;
+    left: 8.021vw;
+    color: white;
+    font-family: "playfairdisplay-m";
+    font-size: 2.5vw;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 950px) {
+    .nepon .up_block img {
+        display: none;
+    }
+    .nepon .up_block {
+        height: 141.667vw;
+        background: url('./images/top_img.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .nepon .up_block h3 {
+        font-size: 9vw;
+        left: 7.68vw;
+        bottom: 11.148vw;
+    }
+}
+
+.nepon .circles_text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nepon .circles_text .top_phrase {
+    display: flex;
+    align-items: center;
+    font-family: "playfairdisplay-m";
+    font-size: 1.4vw;
+    margin-bottom: 3vw;
+    margin-top: 2.083vw;
+}
+
+.nepon .circles_text .top_phrase img {
+    width: 1.823vw;
+    margin: 0 .5vw;
+}
+
+.nepon .circles {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 66.198vw;
+}
+
+.nepon .circles div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.nepon .circles img {
+    width: 9.427vw;
+}
+
+.nepon .circles div h4 {
+    margin: 0;
+    padding: 0;
+    font-family: "playfairdisplay-m";
+    font-size: 1.4vw;
+    font-weight: 100;
+    margin: 0.938vw 0 0.990vw 0;
+}
+
+.nepon .circles div p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: "bwmodelica-r";
+    color: #808080;
+    font-size: 1vw;
+    line-height: 1.5;
+}
+
+.nepon .circles hr {
+    position: absolute;
+    width: 90%;
+    height: 0.13vw;
+    background: #4c97bf;
+    border: none;
+    top: calc(9.427vw / 2 - 0.6vw);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 950px) {
+    .nepon .circles_text {
+        overflow: hidden;
+    }
+    .nepon .circles_text::before {
+        content: '';
+        width: 73.333vw;
+        height: 73.333vw;
+        background: #f6fbfa;
+        position: absolute;
+        border-radius: 50%;
+        z-index: 2;
+        right: -40%;
+        top: 30vw;
+    }
+    .nepon .circles_text .top_phrase {
+        font-size: 10vw;
+        flex-direction: column;
+        align-self: flex-start;
+        margin-left: 7.68vw;
+        z-index: 3;
+    }
+    .nepon .circles_text .top_phrase img {
+        width: 11.667vw;
+    }
+    .nepon .circles {
+        flex-direction: column;
+        width: 100vw;
+    }
+    .nepon .circles img {
+        width: 36.204vw;
+    }
+    .nepon .circles div h4 {
+        font-size: 6.5vw;
+        margin-top: 4.537vw;
+        margin-bottom: 4.537vw;
+    }
+    .nepon .circles div p {
+        font-size: 5vw;
+    }
+    .nepon .circles div {
+        margin-bottom: 13.815vw;
+        margin-top: 0;
+        background: white;
+        padding: 6vw 0;
+    }
+    .nepon .circles hr {
+        position: absolute;
+        height: 70%;
+        width: 0.3vw;
+        background: #4c97bf;
+        border: none;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.nepon .form_cnt {
+    background: #F9FAF5;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.750vw;
+    overflow: hidden;
+}
+
+.nepon .form_cnt .top_block {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.750vw;
+    margin-bottom: 3.906vw;
+}
+
+.nepon .form_cnt .top_block #oneSvg:hover .fil1, .nepon .form_cnt .top_block #oneSvg:hover .fil0 {
+    transition: .4s;
+    fill: #F9FAF5;
+}
+
+.nepon .form_cnt .top_block #oneSvg:hover .fil2 {
+    transition: .4s;
+    fill: #73AAC7;
+}
+
+.nepon .form_cnt .top_block #oneSvg {
+    transition: .4s;
+}
+
+.nepon .form_cnt .top_block #oneSvg:hover {
+    transition: .4s;
+    transform: scale(1.2);
+}
+
+/* -------- */
+
+.nepon .form_cnt .top_block #twoSvg:hover .fil0 {
+    transition: .4s;
+    fill: #F9FAF5;
+}
+
+.nepon .form_cnt .top_block #twoSvg:hover .fil2 {
+    transition: .4s;
+    fill: #F9FAF5;
+}
+
+.nepon .form_cnt .top_block #twoSvg:hover .fil1 {
+    transition: .4s;
+    fill: #73AAC7;
+}
+
+.nepon .form_cnt .top_block #twoSvg {
+    transition: .4s;
+}
+
+.nepon .form_cnt .top_block #twoSvg:hover {
+    transition: .4s;
+    transform: scale(1.2);
+}
+
+/* ---------- */
+
+.nepon .form_cnt .top_block #threeSvg:hover .fil0 {
+    transition: .4s;
+    fill: #F9FAF5;
+}
+
+.nepon .form_cnt .top_block #threeSvg:hover .fil1 {
+    transition: .4s;
+    fill: #F9FAF5;
+}
+
+.nepon .form_cnt .top_block #threeSvg:hover .fil2 {
+    transition: .4s;
+    fill: #73AAC7;
+}
+
+.nepon .form_cnt .top_block #threeSvg:hover .fil4 {
+    transition: .4s;
+    fill: #F9FAF5;
+}
+
+.nepon .form_cnt .top_block #threeSvg {
+    transition: .4s;
+}
+
+.nepon .form_cnt .top_block #threeSvg:hover {
+    transition: .4s;
+    transform: scale(1.2);
+}
+
+.nepon .form_cnt .top_block .blocks {
+    display: flex;
+}
+
+.nepon .form_cnt h2 {
+    margin-bottom: 3.438vw;
+    font-family: "playfairdisplay-m";
+    font-weight: 100;
+    font-size: 1.9vw;
+}
+
+.nepon .form_cnt .top_block .blocks div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nepon .form_cnt .top_block .blocks div:nth-child(1) {
+    width: 17.198vw;
+}
+
+.nepon .form_cnt .top_block .blocks div:nth-child(2) {
+    width: 20.563vw;
+}
+
+.nepon .form_cnt .top_block .blocks div:nth-child(3) {
+    width: 17.198vw;
+}
+
+.nepon .form_cnt .top_block .blocks div p {
+    font-family: "bwmodelica-r";
+    font-size: .8vw;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: .4vw 0;
+}
+
+.nepon .form_cnt .top_block .blocks div:nth-child(1) p {
+    background: #73AAC7;
+}
+
+.nepon .form_cnt .top_block .blocks div:nth-child(2) p {
+    background: #4C97BF;
+}
+
+.nepon .form_cnt .top_block .blocks div:nth-child(3) p {
+    background: #317DA6;
+}
+
+.nepon .form_cnt .top_block .blocks svg {
+    width: 4.688vw;
+    height: 4.010vw;
+    margin-bottom: 1vw;
+}
+
+.nepon .form_cnt .form_img {
+    width: 54.948vw;
+    position: relative;
+    display: flex;
+    border-radius: 0.781vw;
+    overflow: hidden;
+}
+
+.nepon .form_cnt .form_img>div {
+    position: relative;
+    width: 50%;
+}
+
+.nepon .form_cnt .form_img .right_block img {
+    width: 100%;
+    border-radius: 0 0.781vw 0.781vw 0;
+}
+
+.nepon .form_cnt .form_img .right_block p {
+    position: absolute;
+    font-family: "bwmodelica-r";
+    font-size: 1vw;
+    color: white;
+    bottom: 7.031vw;
+    right: 0;
+    background: #08405E;
+    z-index: 1;
+    padding: .2vw .4vw;
+}
+
+.nepon .form_cnt .left_block {
+    padding: 1vw 0 2.240vw 1.8vw;
+    box-sizing: border-box;
+    max-height: 41.25vw;
+    background: white;
+    border-radius: 0.781vw 0 0 0.781vw;
+}
+
+.nepon .form_cnt .left_block form {
+    display: flex;
+    flex-direction: column;
+}
+
+.nepon .form_cnt .left_block h4 {
+    display: flex;
+    align-items: center;
+    font-family: "playfairdisplay-m";
+    font-size: 1.15vw;
+    padding: 0;
+    margin: 0;
+    font-weight: 100;
+    margin-bottom: .4vw;
+}
+
+.nepon form input[type="text"], .nepon form input[type="email"], .nepon form input[type="number"], .nepon form input[type="tel"], .nepon form textarea {
+    background: #E2F0F5;
+    border: none;
+    width: calc(100% - 1.8vw);
+    margin: .15vw 0;
+    padding: .6vw .4vw;
+    box-sizing: border-box;
+    outline: none;
+    position: relative;
+    display: block;
+    font-family: "bwmodelica-r";
+    font-size: .8vw;
+}
+
+.nepon form input[type="text"]::placeholder, .nepon form input[type="email"]::placeholder, .nepon form input[type="number"]::placeholder, .nepon form input[type="tel"]::placeholder, .nepon form textarea::placeholder {
+    color: #000;
+}
+
+.nepon form>div {
+    position: relative;
+}
+
+.nepon form #nameInput p, .nepon form #emailInput p, .nepon form #telInput p, .nepon form #addressInput p {
+    position: absolute;
+    top: 0;
+    color: red;
+    z-index: 1;
+    font-size: .9vw;
+}
+
+.nepon form #nameInput p {
+    left: 3.2vw;
+}
+
+.nepon form #emailInput p {
+    left: 3vw;
+}
+
+.nepon form #telInput p {
+    left: 6.8vw;
+}
+
+.nepon form #addressInput p {
+    left: 4.1vw;
+}
+
+.nepon form #nameInput input:focus+p, .nepon form #emailInput input:focus+p, .nepon form #telInput input:focus+p, .nepon form #addressInput input:focus+p, .nepon form input:focus::placeholder, .nepon form textarea:focus::placeholder {
+    opacity: 0;
+}
+
+.nepon form textarea {
+    resize: none;
+    margin-bottom: .4vw;
+}
+
+.nepon .form_cnt .left_block .pickWay {
+    background: #F9FAF5;
+    width: calc(100% - 1.8vw);
+    margin-bottom: .4vw;
+}
+
+.nepon .form_cnt .left_block .pickWay div {
+    display: flex;
+    align-items: center;
+}
+
+.nepon .form_cnt .left_block .pickWay div input {
+    margin: 0 .5vw 0 .8vw;
+    background-color: red;
+}
+
+/* .nepon .form_cnt .left_block .pickWay div input:checked {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #e145a3;
+} */
+
+.nepon .form_cnt .left_block .pickWay div label {
+    color: #303A4C;
+    font-family: "bwmodelica-r";
+    font-size: .9vw;
+    margin: .4vw 0;
+    position: relative;
+}
+
+.nepon .pickWay input[type="radio"]:checked, .nepon .pickWay input[type="radio"]:not(:checked) {
+    display: none;
+}
+
+.nepon .pickWay div:nth-child(1) {
+    margin: 0.521vw 0 0.677vw .8vw;
+}
+
+.nepon .pickWay div:nth-child(2) {
+    margin: 0 0 0.677vw .8vw;
+}
+
+.nepon .pickWay input[type="radio"]:checked+label, .nepon .pickWay input[type="radio"]:not(:checked)+label {
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nepon .pickWay input[type="radio"]:checked+label:before, .nepon .pickWay input[type="radio"]:not(:checked)+label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0.156vw;
+    width: 0.729vw;
+    height: 0.729vw;
+    background-color: #E6E6E6;
+}
+
+.nepon .pickWay input[type="radio"]:checked+label:before, .nepon .pickWay input[type="radio"]:not(:checked)+label:before {
+    border-radius: 100%;
+}
+
+.nepon .pickWay input[type="radio"]:checked+label:after, .nepon .pickWay input[type="radio"]:not(:checked)+label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    top: 0.313vw;
+    left: 0.156vw;
+    width: 0.417vw;
+    height: 0.417vw;
+    border-radius: 100%;
+    background-color: #08405E;
+}
+
+.nepon .pickWay input[type="radio"]:not(:checked)+label:after {
+    opacity: 0;
+}
+
+.nepon .pickWay input[type="radio"]:checked+label:after {
+    opacity: 1;
+}
+
+.nepon .form_cnt form .attach_file {
+    background: #F9FAF5;
+    width: calc(100% - 1.8vw);
+    padding-left: .8vw;
+    box-sizing: border-box;
+}
+
+.nepon .form_cnt form .attach_file p {
+    font-family: "bwmodelica-r";
+    font-size: 0.9vw;
+    margin-bottom: .5vw;
+    margin-top: .5vw;
+}
+
+.nepon .form_cnt form .attach_file label {
+    color: #1a1d22;
+    padding: .2vw 1rem;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 0;
+    font-size: 1vw;
+    border-radius: 100px;
+    font-family: "bwmodelica-r";
+    border: 0.14vw solid black;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: .5vw;
+}
+
+.nepon .form_cnt form .attach_file label img {
+    width: 1.3vw;
+    margin-right: .4vw;
+}
+
+.nepon .form_cnt form .please {
+    font-family: "bwmodelica-r";
+    font-size: 0.76vw;
+    line-height: 1.5;
+    margin: .4vw 0 .4vw .7vw;
+}
+
+.nepon .form_cnt form .i_und {
+    display: flex;
+    align-items: center;
+    margin-bottom: .4vw;
+}
+
+.nepon .form_cnt form .i_und label {
+    font-family: "bwmodelica-r";
+    color: #08405E;
+    margin: 0;
+    font-size: 1vw;
+}
+
+.nepon .form_cnt form .i_und input {
+    margin: 0 .4vw 0 .8vw;
+    outline: none;
+}
+
+.nepon .form_cnt form input[type="submit"] {
+    width: fit-content;
+    margin-left: .8vw;
+    background: #08405E;
+    color: white;
+    font-family: "playfairdisplay-m";
+    border: none;
+    font-size: 1.2vw;
+    padding: .3vw 2vw;
+    border-radius: 1000px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.nepon .form_cnt form input[type="radio"] {
+    cursor: pointer;
+}
+
+.nepon .form_cnt form input[type="submit"]:hover {
+    opacity: .6;
+}
+
+.nepon .form_cnt>img {
+    width: 100vw;
+}
+
+@media screen and (max-width: 950px) {
+    .nepon .fotm_cnt {
+        background: #E7EBD9;
+    }
+    .nepon .form_cnt .top_block .blocks {
+        display: none;
+    }
+    .nepon .form_cnt .top_block h2 {
+        font-size: 9vw;
+        width: 80%;
+        margin-left: calc(7.68vw - 10%);
+        color: #063B57;
+    }
+    .nepon .form_cnt .form_img {
+        width: calc(100vw - 7.78vw * 2);
+    }
+    .nepon .form_cnt .form_img .right_block {
+        display: none;
+    }
+    .nepon .form_cnt .form_img .left_block {
+        width: 100%;
+        background: none;
+        max-height: fit-content;
+    }
+    .nepon .form_cnt .top_block {
+        margin-bottom: 0;
+    }
+    .nepon .form_cnt .left_block h4 {
+        font-size: 5.4vw;
+        color: #666;
+        margin-bottom: 6.481vw;
+    }
+    .nepon form input[type="text"], .nepon form input[type="email"], .nepon form input[type="number"], .nepon form input[type="tel"], .nepon form textarea {
+        font-size: 4.5vw;
+        border-radius: 0.463vw;
+        background: white;
+        padding: 5.370vw 3.926vw;
+        margin: 2.222vw 0;
+    }
+    .nepon form input[type="text"]::placeholder, .nepon form input[type="email"]::placeholder, .nepon form input[type="number"]::placeholder, .nepon form input[type="tel"]::placeholder, .nepon form textarea::placeholder {
+        color: #666;
+    }
+    .nepon .form_cnt .left_block .pickWay {
+        background: white;
+        margin-bottom: 2.2vw;
+    }
+    .nepon .form_cnt .left_block .pickWay div label {
+        font-size: 4.5vw;
+        width: 80%;
+        margin: 0;
+        color: #666;
+        line-height: 1.4;
+        padding-left: 7vw;
+    }
+    .nepon .form_cnt .left_block .pickWay div:nth-child(1) {
+        margin: 3.519vw 0 5.370vw 0;
+    }
+    .nepon .form_cnt .left_block .pickWay div:nth-child(2) {
+        margin-bottom: 3.519vw;
+    }
+    .nepon .form_cnt .left_block .pickWay div input {
+        width: 3.056vw;
+        height: 3.056vw;
+        margin: 0 2.222vw 0 3.056vw;
+    }
+    .nepon .pickWay input[type="radio"]:checked, .nepon .pickWay input[type="radio"]:not(:checked) {
+        display: none;
+    }
+    .nepon .pickWay input[type="radio"]:checked+label:before, .nepon .pickWay input[type="radio"]:not(:checked)+label:before {
+        content: "";
+        position: absolute;
+        left: 2vw;
+        top: 1.6vw;
+        width: 3.056vw;
+        height: 3.056vw;
+        background-color: #E6E6E6;
+    }
+    .nepon .pickWay input[type="radio"]:checked+label:before, .nepon .pickWay input[type="radio"]:not(:checked)+label:before {
+        border-radius: 100%;
+    }
+    .nepon .pickWay input[type="radio"]:checked+label:after, .nepon .pickWay input[type="radio"]:not(:checked)+label:after {
+        content: "";
+        position: absolute;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        top: 2.2vw;
+        left: 2.55vw;
+        height: 2vw;
+        width: 2vw;
+        border-radius: 100%;
+        background-color: #08405E;
+    }
+    .nepon .pickWay input[type="radio"]:not(:checked)+label:after {
+        opacity: 0;
+    }
+    .nepon .pickWay input[type="radio"]:checked+label:after {
+        opacity: 1;
+    }
+    .nepon .form_cnt form .attach_file {
+        background: white;
+    }
+    .nepon .form_cnt form .attach_file p {
+        font-size: 4.5vw;
+        color: #666;
+        margin: 3.519vw 0 3.056vw 3.056vw;
+    }
+    .nepon .form_cnt form .attach_file label {
+        margin: 0 0 3.056vw 3.056vw;
+        font-size: 4vw;
+        padding: 1vw 5vw;
+    }
+    .nepon .form_cnt form .attach_file label img {
+        width: 3.333vw;
+        margin-right: 2vw;
+    }
+    .nepon .form_cnt form .please {
+        font-size: 2.5vw;
+        margin-bottom: 4.352vw;
+    }
+    .nepon .form_cnt form .i_und {
+        margin-bottom: 6.852vw;
+    }
+    .nepon .form_cnt form .i_und input {
+        margin-right: 2.148vw;
+        width: 3.056vw;
+        height: 3.056vw;
+    }
+    .nepon .form_cnt form .i_und label {
+        font-size: 4.5vw;
+    }
+    .nepon .form_cnt form input[type="submit"] {
+        margin-left: .8vw;
+        font-size: 6.5vw;
+        padding: .8vw 14vw;
+        border-radius: 0.926vw;
+        margin-bottom: 4.852vw;
+    }
+    .nepon .form_cnt>img {
+        /* display: none; */
+        width: 150vw;
+    }
+}
+
+.nepon .install {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    margin-top: 3vw;
+}
+
+.nepon .install .top_block {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2vw;
+}
+
+.nepon .install .top_block h2 {
+    width: fit-content;
+    margin-bottom: 1vw;
+    font-family: "playfairdisplay-m";
+    font-weight: 100;
+    font-size: 1.9vw;
+}
+
+.nepon .install .top_block p {
+    color: #808080;
+    font-family: "bwmodelica-r";
+    text-align: center;
+    margin-top: 0.5vw;
+    font-size: 1vw;
+    line-height: 1.5;
+}
+
+.nepon .install .blocks>div {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nepon .install .blocks {
+    position: relative;
+    width: 52.708vw;
+}
+
+.nepon .install .blocks .img_text {
+    position: relative;
+}
+
+.nepon .install .blocks .img_text img {
+    width: 23.958vw;
+}
+
+.nepon .install .blocks .img_text p {
+    position: absolute;
+    color: white;
+    background: #08405E;
+    bottom: 0;
+    padding: .2vw .4vw;
+    font-family: "bwmodelica-r";
+    font-size: 1vw;
+    width: fit-content;
+    margin: 0;
+    transform: translateY(35%);
+    line-height: 1.5;
+}
+
+.nepon .install .blocks div:nth-child(1) .img_text p, .nepon .install .blocks div:nth-child(3) .img_text p {
+    right: -1vw;
+}
+
+.nepon .install .blocks div:nth-child(2) .img_text p, .nepon .install .blocks div:nth-child(4) .img_text p {
+    left: -1vw;
+}
+
+.nepon .install .blocks .text {
+    margin: 0 auto;
+}
+
+.nepon .install .blocks .text h3 {
+    width: fit-content;
+    margin-bottom: 1vw;
+    font-family: "playfairdisplay-m";
+    font-weight: 100;
+    font-size: 1.4vw;
+}
+
+.nepon .install .blocks .text p {
+    color: #808080;
+    font-family: "bwmodelica-r";
+    margin-top: 0.5vw;
+    font-size: 1vw;
+    line-height: 1.5;
+    max-width: 20.573vw;
+}
+
+@media screen and (max-width: 950px) {
+    .nepon .install {
+        align-items: flex-start;
+        margin-top: 9.259vw;
+        margin-left: 7.78vw;
+        width: calc(100vw - 7.78vw * 2);
+    }
+    .nepon .install .top_block {
+        align-items: flex-start;
+    }
+    .nepon .install .top_block h2 {
+        font-size: 6.5vw;
+        margin-top: 0;
+        color: #063B57;
+    }
+    .nepon .install .top_block p {
+        font-size: 5vw;
+        text-align: left;
+        color: #000;
+    }
+    .nepon .install .blocks {
+        width: calc(100vw - 7.68vw * 2);
+    }
+    .nepon .install .blocks>div:nth-child(1), .nepon .install .blocks>div:nth-child(3) {
+        flex-direction: column;
+    }
+    .nepon .install .blocks>div:nth-child(2), .nepon .install .blocks>div:nth-child(4) {
+        flex-direction: column-reverse;
+    }
+    .nepon .install .blocks .img_text img {
+        width: calc(100vw - 7.68vw * 2);
+    }
+    .nepon .install .blocks div:nth-child(2) .img_text p, .nepon .install .blocks div:nth-child(4) .img_text p {
+        right: -1vw;
+        left: auto;
+    }
+    .nepon .install .blocks .img_text p {
+        padding: 1vw;
+        font-size: 3.5vw;
+    }
+    .nepon .install .blocks .text {
+        margin: 5.407vw auto 2vw 0;
+        width: fit-content;
+    }
+    .nepon .install .blocks .text h3 {
+        font-size: 6.5vw;
+    }
+    .nepon .install .blocks .text p {
+        font-size: 5vw;
+        max-width: max-content;
+        color: #000;
+    }
+}
+
+.nepon .stages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+.nepon .stages .top_block {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    margin-top: 6vw;
+    margin-bottom: 2vw;
+}
+
+.nepon .stages .top_block h2 {
+    width: fit-content;
+    margin-bottom: 1vw;
+    font-family: "playfairdisplay-m";
+    font-weight: 100;
+    font-size: 1.9vw;
+}
+
+.nepon .wrap_stages {
+    width: fit-content;
+}
+
+.nepon .stage {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.nepon .stage>h3 {
+    margin: 0 auto;
+    width: fit-content;
+    font-family: "playfairdisplay-m";
+    font-weight: 100;
+    font-size: 1.4vw;
+    color: #08405E;
+    margin-bottom: 1vw;
+}
+
+.nepon .stage .blocks {
+    display: flex;
+    position: relative;
+}
+
+.nepon .stage .blocks div {
+    position: relative;
+    margin-bottom: 4vw;
+}
+
+.nepon .stage .blocks div img {
+    width: 16.927vw;
+}
+
+.nepon .stage .blocks div p {
+    position: absolute;
+    font-family: "bwmodelica-r";
+    font-size: 1vw;
+    color: white;
+    bottom: 0;
+    left: 0;
+    background: #08405E;
+    z-index: 1;
+    padding: .2vw .4vw;
+    margin: 0;
+}
+
+@media screen and (max-width: 950px) {
+    .nepon .stages {
+        display: none;
+    }
+}
+
+.nepon .buy_hedge {
+    padding: 2vw 0 5vw;
+    display: flex;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nepon .buy_hedge .main_title {
+    font-size: 2.5vw;
+    margin-bottom: 0;
+    font-family: "playfairdisplay-m";
+    font-weight: 500;
+    color: #3F91B9;
+}
+
+.nepon .buy_hedge h4 {
+    font-family: 'playfairdisplay-m', serif;
+    font-size: 1.8vw;
+    margin-top: 0;
+    font-weight: 400;
+    text-align: center;
+}
+
+.nepon .buy_hedge .upper_text {
+    color: #808080;
+    font-family: "bwmodelica-r";
+    text-align: center;
+    width: 40%;
+    margin-top: 0.5vw;
+    font-size: 1.1vw;
+}
+
+.nepon .buy_hedge .row_images {
+    display: flex;
+    margin-top: 1vw;
+    justify-content: center;
+}
+
+.nepon .buy_hedge .left_part_images, .nepon .buy_hedge .right_part_images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nepon .buy_hedge .left_part_images>img, .nepon .buy_hedge .right_part_images>img {
+    width: 33vw;
+    margin: 0 5vw;
+}
+
+.nepon .buy_hedge .left_part_images>img {
+    margin-top: 3vw;
+}
+
+.nepon .characteristics {
+    margin-bottom: 0;
+}
+
+.nepon .buy_hedge .buttons_block {
+    background: #DFF4FA;
+    border-radius: 1vw;
+    width: 19vw;
+    margin-top: 2.73vw;
+    display: flex;
+    padding: 0.3vw 0.8vw 0.8vw;
+    flex-direction: column;
+    margin-right: -1vw;
+    align-items: center;
+}
+
+.nepon .buy_hedge .buttons_block.second {
+    margin-right: 0;
+    margin-top: 3vw;
+    margin-left: -1vw;
+}
+
+.nepon .buy_hedge .buttons_block .title {
+    font-family: 'playfairdisplay-m', serif;
+    color: #033D5C;
+    font-size: 1.6vw;
+}
+
+.nepon .buy_hedge .buttons_block .btn_block {
+    width: 100%;
+    background: #033D5C;
+    color: #fff;
+    outline: none;
+    border: none;
+    text-align: center;
+    margin-top: 1vw;
+    text-decoration: none;
+    font-size: 1.5vw;
+    border-radius: 0.3vw;
+    font-family: 'playfairdisplay-m', serif;
+    padding: 0.2vw;
+    transition: 400ms;
+}
+
+.nepon .buy_hedge .buttons_block .btn_block.second {
+    margin-top: 0.5vw;
+    background: #669CAD;
+}
+
+.nepon .buy_hedge .buttons_block .btn_block:hover, .nepon .buy_hedge .buttons_block .btn_block.second:hover {
+    background: #fff;
+    color: #000;
+}
+
+.nepon .buy_hedge .blue_row {
+    width: 42vw;
+    color: #fff;
+    font-family: "bwmodelica-r";
+    font-size: 1vw;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.3vw 0;
+    border-radius: 0.3vw 0 0 0.3vw;
+    background: #669CAD;
+}
+
+.buy_hedge .blue_row.second {
+    background: #0086B0;
+    border-radius: 0 0.3vw 0.3vw 0;
+}
+
+.nepon .buy_hedge .under_text {
+    margin-top: 2vw;
+    width: 82vw;
+    font-size: 0.85vw;
+    text-align: center;
+    font-family: "bwmodelica-r";
+    color: #808080;
+}
+
+.nepon .left_part_images {
+    position: relative;
+}
+
+.nepon .left_part_images::after {
+    content: "";
+    right: 0vw;
+    bottom: 15.8vw;
+    width: 8vw;
+    height: 0.09vw;
+    background: url("../images/dots.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-x;
+    transform: translateX(50%);
+    position: absolute;
+    opacity: .6;
+}
+
+.nepon .message_popup {
+    padding: 0 2vw;
+    font-size: 1.5vw;
+}
+
+.nepon .top_block_mobile {
+    display: none;
+    width: 93.981vw;
+    height: 108.333vw;
+    background: url("./images/buy_banner_top.jpg");
+    background-size: cover;
+    margin-bottom: 4vw;
+    position: relative;
+}
+
+.nepon .top_block_mobile .top_phrase {
+    position: absolute;
+    color: white;
+    font-family: "playfairdisplay-m";
+    left: 50%;
+    background: #5597BA;
+    transform: translateX(-50%);
+    font-size: 4vw;
+    border-radius: 0 0 4.211vw 4.211vw;
+    padding: 1.3vw 3.981vw 3.630vw 3.981vw;
+    margin-top: 0;
+}
+
+.nepon .top_block_mobile .center_phrase {
+    position: absolute;
+    color: white;
+    font-family: "bwmodelica-r";
+    left: 50%;
+    background: #669CAD;
+    transform: translateX(-50%);
+    font-size: 4vw;
+    border-radius: 0.526vw;
+    width: 98vw;
+    text-align: center;
+    top: 58%;
+    padding: 1vw 0;
+}
+
+.nepon .top_block_mobile .buy_now_butt {
+    position: absolute;
+    color: white;
+    font-family: "playfairdisplay-m";
+    left: 50%;
+    background: #033D5C;
+    transform: translateX(-50%);
+    font-size: 4vw;
+    border-radius: 1.579vw;
+    width: 80.556vw;
+    text-align: center;
+    top: 76%;
+    padding: 2vw 0;
+    font-size: 7vw;
+    line-height: 1.3;
+    text-decoration: none;
+}
+
+.nepon .bottom_block_mobile {
+    display: none;
+    width: 93.981vw;
+    height: 105.370vw;
+    background: url("./images/buy_banner_bottom.jpg");
+    background-size: cover;
+    position: relative;
+    border-radius: 8.229vw;
+}
+
+.nepon .bottom_block_mobile .top_phrase {
+    position: absolute;
+    color: white;
+    font-family: "playfairdisplay-m";
+    left: 50%;
+    background: #5597BA;
+    transform: translateX(-50%);
+    font-size: 4vw;
+    border-radius: 0 0 4.211vw 4.211vw;
+    padding: 1.3vw 3.981vw 3.630vw 3.981vw;
+    margin-top: 0;
+}
+
+.nepon .bottom_block_mobile .center_phrase {
+    position: absolute;
+    color: white;
+    font-family: "bwmodelica-r";
+    left: 50%;
+    background: #0086B0;
+    transform: translateX(-50%);
+    font-size: 4vw;
+    border-radius: 0.526vw;
+    width: 98vw;
+    text-align: center;
+    top: 65%;
+    padding: 1vw 0;
+}
+
+.nepon .bottom_block_mobile .buy_now_butt {
+    position: absolute;
+    color: white;
+    font-family: "playfairdisplay-m";
+    left: 50%;
+    background: #033D5C;
+    transform: translateX(-50%);
+    font-size: 4vw;
+    border-radius: 1.579vw;
+    text-align: center;
+    top: 84%;
+    padding: 1vw 4vw;
+    font-size: 6vw;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.nepon .bottom_block_mobile .bottom_butt {
+    position: absolute;
+    color: white;
+    font-family: "playfairdisplay-m";
+    left: 50%;
+    background: #669CAD;
+    transform: translateX(-50%);
+    font-size: 4vw;
+    border-radius: 1.579vw;
+    text-align: center;
+    top: 85%;
+    padding: 3vw 8vw;
+    width: fit-content;
+    font-size: 6vw;
+    line-height: 1.5;
+    display: none;
+}
+
+@media(max-width:950px) {
+    .nepon .bottom_block_mobile, .nepon .top_block_mobile {
+        display: block;
+    }
+    .nepon .buy_hedge h4 {
+        font-size: 2.3vw;
+    }
+    .nepon .left_part_images::after {
+        content: none;
+    }
+    .nepon .buy_hedge .upper_text {
+        width: 52%;
+        margin-top: 1vw;
+        font-size: 1.4vw;
+        margin-bottom: 5vw;
+    }
+    .nepon .buy_hedge .buttons_block .title {
+        font-size: 2.3vw;
+    }
+    .nepon .buy_hedge .buttons_block {
+        width: 21vw;
+    }
+    .nepon .buy_hedge .blue_row {
+        width: 42vw;
+        font-size: 1.3vw;
+    }
+    .nepon .buy_hedge .buttons_block .btn_block {
+        font-size: 1.6vw;
+    }
+    .nepon .buy_hedge {
+        padding: 0vw 0 8vw;
+    }
+}
+
+@media(max-width: 950px) {
+    .nepon .buy_hedge .row_images {
+        flex-direction: column;
+    }
+    .nepon .message_popup {
+        padding: 5vw;
+        font-size: 5.5vw;
+        text-align: center;
+    }
+    .nepon .buy_hedge .left_part_images>img, .nepon .buy_hedge .right_part_images>img {
+        width: 63vw;
+        margin: 0;
+    }
+    .nepon .buy_hedge .left_part_images {
+        margin-bottom: 10vw;
+        margin-top: 3vw;
+        display: none;
+    }
+    .nepon .buy_hedge .right_part_images {
+        margin-bottom: 10vw;
+        margin-top: 3vw;
+        display: none;
+    }
+    .nepon .buy_hedge .buttons_block, .nepon .buy_hedge .buttons_block.second {
+        width: 35vw;
+        margin: 4vw 0 0;
+    }
+    .nepon .buy_hedge .buttons_block .title {
+        font-size: 3.3vw;
+    }
+    .nepon .buy_hedge .buttons_block .btn_block {
+        font-size: 2.6vw;
+        margin-top: 2vw;
+        border-radius: 1vw;
+        padding: 0.7vw 0;
+    }
+    .nepon .popup_overflow .close svg {
+        width: 7vw;
+        height: auto;
+    }
+    .nepon .buy_hedge .blue_row {
+        width: 76vw;
+        font-size: 2.4vw;
+        margin-top: 1vw;
+    }
+    .nepon .buy_hedge .buttons_block .btn_block.second {
+        margin-top: 1.6vw;
+    }
+    .nepon .buy_hedge .upper_text {
+        width: 88%;
+        margin-top: 1vw;
+        font-size: 4vw;
+        line-height: 1.5;
+    }
+    .nepon .buy_hedge h4 {
+        font-size: 4.3vw;
+    }
+    .nepon .buy_hedge .main_title {
+        font-size: 8vw;
+        font-family: "playfairdisplay-m";
+        font-weight: 100;
+        color: #033d5c;
+    }
+    .nepon .buy_hedge .under_text {
+        width: 85vw;
+        margin-top: 7vw;
+        font-size: 4vw;
+        line-height: 1.5;
+    }
+}
+
+.nepon .testimonials.img_placeholder {
+    margin: 0;
+    width: 100%;
+    max-width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.nepon .img_placeholder img {
+    left: -0.2vw;
+    position: relative;
+    display: block;
+    width: 101vw;
+}
+
+.nepon .img_placeholder img.mobile {
+    display: none;
+}
+
+.nepon .testimonials.img_placeholder .text_part {
+    position: absolute;
+    font-weight: 400;
+    font-family: 'playfairdisplay-m', serif;
+    color: #fff;
+    left: 50%;
+    padding: 1.3vw 1.8vw 1.3vw 1.8vw;
+    font-size: 2.5vw;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.nepon #play-button {
+    position: absolute;
+    top: 61%;
+    left: 19%;
+    cursor: pointer;
+    background: #4C97BF;
+    font-size: 2.3vw;
+    padding: 0.5vw 1.2vw;
+    border: none;
+    outline: none;
+    border-radius: 2vw;
+    color: #Fff;
+    font-family: 'playfairdisplay-m', serif;
+}
+
+.nepon #play-button:hover {
+    background: #54addd;
+}
+
+.nepon .testimonials.img_placeholder #play-button2 {
+    top: 40%;
+    position: absolute;
+    cursor: pointer;
+    left: 50%;
+    background: transparent;
+    border: 0.6vw solid #ffffff80;
+    width: 10vw;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+
+.nepon .testimonials.img_placeholder #play-button2 svg {
+    width: 3vw;
+    margin-left: 0.5vw;
+    height: auto;
+}
+
+.nepon .testimonials.img_placeholder #play-button2 path {
+    transition: 400ms;
+}
+
+.nepon .testimonials.img_placeholder #play-button2:hover {
+    border-color: #54addd;
+}
+
+.nepon .testimonials.img_placeholder #play-button2:hover path {
+    fill: #fff;
+}
+
+.nepon .popup_content iframe.testimona {
+    width: 63.96vw;
+    height: 36vw;
+    max-width: 80vw;
+    max-height: 80vh;
+}
+
+.nepon .text_part_down {
+    display: none;
+}
+
+@media(max-width:950px) {
+    .nepon .img_placeholder img {
+        display: none;
+    }
+    .nepon .img_placeholder img.mobile {
+        display: block;
+    }
+    .nepon .testimonials.img_placeholder #play-button2 {
+        top: 45%;
+        border: 2vw solid #ffffff80;
+        width: 25vw;
+        height: 25vw;
+    }
+    .nepon .testimonials.img_placeholder #play-button2 svg {
+        width: 12vw;
+        margin-left: 2vw;
+    }
+    .nepon .testimonials.img_placeholder .text_part {
+        left: 5%;
+        background: 0 0;
+        line-height: 1.2;
+        padding: 0;
+        font-size: 7.5vw;
+        width: 50%;
+        top: 5%;
+        transform: none;
+    }
+    .nepon .text_part_down {
+        display: block;
+        position: absolute;
+        font-family: "bwmodelica-r";
+        left: 5%;
+        top: 18%;
+        width: 60%;
+        color: #fff;
+        line-height: 1.3;
+        font-size: 4.5vw;
+    }
+    .nepon .popup_content {
+        padding: 0;
+        border: 1.5vw solid #3f91b9;
+    }
+}
+
+.nepon .popup_overflow {
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.nepon .popup_overflow.active {
+    opacity: 1;
+    transition: 400ms;
+    visibility: visible;
+    z-index: 302;
+    background: rgba(0, 0, 0, 0.692);
+    cursor: pointer;
+}
+
+.nepon .popup_content {
+    transition: 500ms;
+    background: #ffffff;
+    border: 0.5vw solid #3F91B9;
+    visibility: hidden;
+    opacity: 0;
+    padding: 5px;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    max-height: 90vh;
+    padding-bottom: 0.3vw;
+    border-radius: 4px;
+    position: relative;
+    min-width: 15vw;
+    overflow: hidden;
+    min-height: 7vw;
+}
+
+.nepon .popup_overflow.active .popup_content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nepon .popup_overflow .close {
+    cursor: pointer;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+.nepon .popup_overflow .close svg {
+    width: 2vw;
+    height: auto;
+}
+
+.nepon .popup_overflow .close path {
+    fill: #fff;
+    transition: 0.4s;
+}
+
+.nepon .popup_overflow .close:hover path {
+    fill: #7EA258;
+}
+
+@media(max-width: 950px) {
+    .nepon .popup_content iframe.testimona {
+        width: 76.96vw;
+        height: 44vw;
+    }
+    .nepon .testimonials.img_placeholder .text_part {
+        left: 8.36vw;
+        line-height: 1.4;
+        font-size: 9vw;
+        top: 8.36vw;
+    }
+    .nepon .text_part_down {
+        display: block;
+        position: absolute;
+        left: 8.36vw;
+        top: 34vw;
+        width: 60%;
+        color: #fff;
+        line-height: 1.3;
+        font-size: 5vw;
+    }
+}
+
+.nepon .textWithCircle {
+    position: relative;
+}
+
+.nepon .textWithCircle::before {
+    content: '';
+    position: absolute;
+    background: #EDF8FA;
+    width: 1.875vw;
+    height: 1.875vw;
+    border-radius: 50%;
+    z-index: -1;
+    top: -15%;
+}
+
+@media screen and (max-width: 950px) {
+    .nepon .textWithCircle::before {
+        display: none;
+    }
+}
